@@ -1,0 +1,28 @@
+/* author: Jennifer Brana */
+body {
+  background-color: lightblue;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  background-color: lightblue;
+  color: black;
+  font-family: "Copperplate", fantasy, fantasy;
+}
+
+h3 {
+  background-color: lightblue;
+  color: blue;
+  font-family: "Courier New", monospace, monospace;
+}
+
+ul {
+  background-color: lightblue;
+  color: red;
+}
+
+table {
+  background-color: white;
+  color: navy;
+  font-family: "Times New Roman", Times, serif;
+}

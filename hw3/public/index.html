@@ -1,0 +1,102 @@
+<!--Author: Jennifer Brana-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cheesecake Page</title>
+  <link rel="stylesheet" href="stylesheets/hw1style.css"> <!--link to CSS file-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+</script>
+</head>
+
+<!--displayed on html page-->
+<body>
+
+  <h1>Cheesecake Order Form</h1>
+
+  <!--Cheesecake image-->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" width="150" height="150"><br>
+
+  <p id="text1"></p>
+  <p id="text2"></p>
+  <p id="text3"></p>
+  <p id="text4"></p>
+
+  <!--drop down for number pies-->
+  <!--topping list-->
+  <form id="form">
+  <table width=250>
+    <tbody>Quantity Topping</tbody>
+    <tr>
+      <td width=75>
+        <select>
+          <!--source: https://www.w3schools.com/jsref/event_onclick.asp -->
+          <option onclick="order.quantity = 1" value="1">1</option>
+  	      <option onclick="order.quantity = 2" value="2">2</option>
+  	      <option onclick="order.quantity = 3" value="3">3</option>
+        </select>
+      </td>
+      <td width=75>
+
+      <div class="radios">
+        <!--source: https://www.w3schools.com/tags/att_input_type_radio.asp -->
+        <input type="radio" id="Plain" value="Plain" onclick="order.topping = 'Chocolate'">
+        <label for="Plain">Plain</label><br>
+
+        <input type="radio" id="Chocolate" value="Chocolate" onclick="order.topping = 'Plain'">
+        <label for="Chocolate">Chocolate</label><br>
+
+        <input type="radio" id="Cherry" value="Cherry" onclick="order.topping = 'Cherry'">
+        <label for="Cherry">Cherry</label><br>
+
+      </div>
+      </td>
+    </tr>
+  </table>
+
+
+  <!--notes box-->
+  <form>
+    <label>Notes:</label><br>
+    <textarea id="notessss" rows="5" cols="40" placeholder="Enter any special instructions here."></textarea><br><br>
+  </form>
+
+  <!-- source: https://www.w3schools.com/jsref/event_onclick.asp -->
+  <button type="button" onclick="placeOrder()">Order</button>
+
+</form>
+
+
+<script src="javascripts/script.js"></script>
+
+
+
+  <h3>Total Orders Past Months</h3>
+  <div id="months" style="display:flex, flec-direction: row; justify-content: center; align-items: center">
+   <strong class="line">Orders for  </strong>
+   <select class="line">
+	    <option>Jan</option>
+    	<option>Feb</option>
+    	<option>Mar</option>
+	    <option>Apr</option>
+    	<option>May</option>
+    	<option>Jun</option>
+	    <option>Jul</option>
+    	<option>Aug</option>
+    	<option>Sep</option>
+	    <option>Oct</option>
+    	<option>Nov</option>
+    	<option>Dec</option>
+    </select>
+</div>
+
+
+  <!--unordered list of total orders-->
+  <ul>
+    <li>11 cherry</li>
+    <li>17 chocolate</li>
+    <li>31 plain</li>
+  </ul>
+
+</body>
+
+</html>
