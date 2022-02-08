@@ -68,33 +68,37 @@
 
 <script src="javascripts/script.js"></script>
 
+<script src="javascripts/postscript.js"></script>
 
+    <h3>Total Orders Past Months</h3>
 
-  <h3>Total Orders Past Months</h3>
-  <div id="months" style="display:flex, flec-direction: row; justify-content: center; align-items: center">
+    <!-- Make drop down menu for month -->
+    <!-- source: https://www.w3schools.com/howto/howto_js_dropdown.asp#:~:text=Use%20any%20element%20to%20open,dropdown%20menu%20correctly%20with%20CSS. -->
+  <div istyle="display:flex, flex-direction: row; justify-content: center; align-items: center">
    <strong class="line">Orders for  </strong>
-   <select class="line">
-	    <option>Jan</option>
-    	<option>Feb</option>
-    	<option>Mar</option>
-	    <option>Apr</option>
-    	<option>May</option>
-    	<option>Jun</option>
-	    <option>Jul</option>
-    	<option>Aug</option>
-    	<option>Sep</option>
-	    <option>Oct</option>
-    	<option>Nov</option>
-    	<option>Dec</option>
+   <select class="line" id="month" onchange="monthSelect()">
+	    <option class="month" value="JAN">Jan</option>
+    	<option class="month" value="FEB">Feb</option>
+    	<option class="month" value="MAR">Mar</option>
+	    <option class="month" value="APR">Apr</option>
+    	<option class="month" value="MAY">May</option>
+    	<option class="month" value="JUN">Jun</option>
+	    <option class="month" value="JUL">Jul</option>
+    	<option class="month" value="AUG">Aug</option>
+    	<option class="month" value="SEP">Sep</option>
+	    <option class="month" value="OCT">Oct</option>
+    	<option class="month" value="NOV">Nov</option>
+    	<option class="month" value="DEC">Dec</option>
     </select>
-</div>
+  </div>
+
 
 
   <!--unordered list of total orders-->
-  <ul>
-    <li>11 cherry</li>
-    <li>17 chocolate</li>
-    <li>31 plain</li>
+  <ul id="orderList">
+    <li id="cherryOrders">11 cherry</li>
+    <li id="chocolateOrders">17 chocolate</li>
+    <li id="plainOrders">31 plain</li>
   </ul>
 
 </body>

@@ -43,4 +43,33 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+
 module.exports = app;
+
+
+
+//source: https://www.geeksforgeeks.org/how-http-post-request-work-in-node-js/
+// '/' == route
+// 'function' == callback function
+// app.post("/", function(req, res) {
+//   //this is the callback function
+//   const order1 = {topping: "cherry", quantity: 2};
+//   const order2 = {topping: "plain", quantity: 6};
+//   const order3 = {topping: "chocolate", quantity: 3};
+//   const response = [order1, order2, order3];
+// 
+//   console.log(response);
+//
+//   //res.json(response);
+//   res.end(JSON.stringify(response)); //source:https://www.javatpoint.com/expressjs-post
+// });
+
+
+
+
+
+
+
+
+
+//
