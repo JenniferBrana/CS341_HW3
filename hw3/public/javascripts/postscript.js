@@ -9,7 +9,9 @@
 
 
 function monthSelect(){
+    var value = $('#month').val().toUpperCase();
     $.post('/orders', //url
+    {month: value}, //data: pass month to the database thingy idk im not a software enigneer
     function(arrayOrders, status, json){ //callback function
 
         $("#cherryOrders").text(arrayOrders.data[0].cherry.quantity +  " cherry");
